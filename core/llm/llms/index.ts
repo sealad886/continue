@@ -32,6 +32,7 @@ import Llamafile from "./Llamafile";
 import LMStudio from "./LMStudio";
 import Mistral from "./Mistral";
 import MockLLM from "./Mock";
+import MlxLm from "./MlxLm";
 import Moonshot from "./Moonshot";
 import Msty from "./Msty";
 import Nebius from "./Nebius";
@@ -48,7 +49,6 @@ import ContinueProxy from "./stubs/ContinueProxy";
 import TestLLM from "./Test";
 import TextGenWebUI from "./TextGenWebUI";
 import Together from "./Together";
-import Novita from "./Novita";
 import VertexAI from "./VertexAI";
 import Vllm from "./Vllm";
 import WatsonX from "./WatsonX";
@@ -66,7 +66,6 @@ export const LLMClasses = [
   Replicate,
   TextGenWebUI,
   Together,
-  Novita,
   HuggingFaceTGI,
   HuggingFaceInferenceAPI,
   Kindo,
@@ -100,6 +99,7 @@ export const LLMClasses = [
   xAI,
   SiliconFlow,
   Scaleway,
+  MlxLm
 ];
 
 export async function llmFromDescription(
